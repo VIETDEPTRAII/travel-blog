@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  encoding: utf8
   database: travel_blog_production
   username: travel_blog
   password: <%= ENV['TRAVEL_BLOG_DATABASE_PASSWORD'] %>
