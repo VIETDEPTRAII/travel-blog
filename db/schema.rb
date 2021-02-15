@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_132416) do
 
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "username"
-    t.string "password"
+    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
