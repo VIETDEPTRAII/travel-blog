@@ -1,11 +1,11 @@
-<h2 class="text-center mt-3"><%= @article.title %></h2>
-
-<div class="container">
+<h2 class="text-center mt-4"><%= @article.title %></h2>
+<div class="container mt-4">
   <div class="row justify-content-md-center mb-5">
     <div class="col-8">
       <div class="card text-center shadow bg-white rounded">
         <div class="card-header font-italic">
           By VIETDEPTRAI
+          <%= link_to gravatar_for(@article.user, size: 100), user_path(@article.user) %>
         </div>
         <div class="card-body">
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>

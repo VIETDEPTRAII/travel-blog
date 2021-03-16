@@ -19,7 +19,7 @@
 
         <div class="form-group row justify-content-center">
           <%= link_to 'Return article list', articles_path, class: "btn btn-secondary btn-lg mr-5" %>
-          <%= f.submit "#{button_title}", class: "btn btn-success btn-lg" %>
+          <%= f.submit(f.object.new_record? ? "Create article" : "Update article", class: "btn btn-success btn-lg") %>
         </div>
       <% end %>
     </div>
